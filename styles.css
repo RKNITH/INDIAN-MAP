@@ -1,0 +1,108 @@
+:root {
+  --color: #000000;
+  --white: #ffffff;
+}
+
+#imageMap {
+  position: relative;
+  border: 2px solid var(--color);
+  border-radius: 5px;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.ansDot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+
+
+body {
+  background-color: rgb(238, 233, 210);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Make the page non-scrollable */
+}
+
+#markHeading {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid var(--color);
+  border-radius: 5px;
+}
+
+#imageMap {
+  max-width: 100%;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+}
+#submitBtn {
+  padding: 10px 325px;
+  margin-bottom: 25px; 
+  font-size: 16px;
+  background-color: var(--color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: var(--color);
+}
+
+#submitBtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 17px;
+}
+.discord{
+  position: absolute;
+  bottom: 4px;
+  right: 50px;
+  font-size: 18px;
+}
+.fa {
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
